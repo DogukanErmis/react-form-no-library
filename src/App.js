@@ -5,10 +5,10 @@ function App() {
   return (
     <div className="App">
       <form>
-        <FormInput />
-        <FormInput />
-        <FormInput />
-        <FormInput />
+        <FormInput placeholder="Username" />
+        <FormInput placeholder="Email" />
+        <FormInput placeholder="Full Name" />
+        <FormInput placeholder="Other" />
       </form>
     </div>
   );
