@@ -53,10 +53,24 @@ function App() {
     e.preventDefault();
   };
 
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
+  console.log(values);
+
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
-        <FormInput />
+        {inputs.map((input) => (
+          <FormInput
+            key={input.id}
+            {...input}
+            value={values[input.name]}
+            onChange={onChange}
+          />
+        ))}
+
         <button>Submit</button>
       </form>
     </div>
