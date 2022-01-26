@@ -26,7 +26,7 @@ function App() {
     {
       id: 2,
       name: "email",
-      type: "text",
+      type: "email",
       placeholder: "Email",
       errorMessage: "It should be a valid email address!",
       label: "Email",
@@ -48,6 +48,7 @@ function App() {
       errorMessage:
         "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!",
       label: "Password",
+      pattern: `^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+])[A-Za-z\\d][A-Za-z\\d!@#$%^&*()_+]{7,19}$`,
       required: true,
     },
     {
