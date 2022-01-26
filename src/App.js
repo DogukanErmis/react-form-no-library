@@ -17,6 +17,7 @@ function App() {
       name: "username",
       type: "text",
       placeholder: "Username",
+      errorMessage: "",
       label: "Username",
     },
     {
@@ -24,6 +25,7 @@ function App() {
       name: "email",
       type: "text",
       placeholder: "Email",
+      errorMessage: "",
       label: "Email",
     },
     {
@@ -31,6 +33,7 @@ function App() {
       name: "birthday",
       type: "text",
       placeholder: "Birthday",
+      errorMessage: "",
       label: "Birthday",
     },
     {
@@ -38,6 +41,7 @@ function App() {
       name: "password",
       type: "password",
       placeholder: "Password",
+      errorMessage: "",
       label: "Password",
     },
     {
@@ -45,6 +49,7 @@ function App() {
       name: "confirmPassword",
       type: "password",
       placeholder: "Confirm password",
+      errorMessage: "",
       label: "Confirm password",
     },
   ];
