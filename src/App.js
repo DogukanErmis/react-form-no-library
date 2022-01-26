@@ -58,6 +58,7 @@ function App() {
       placeholder: "Confirm password",
       errorMessage: "Passwords do not match!",
       label: "Confirm password",
+      pattern: values.password,
       required: true,
     },
   ];
